@@ -1,0 +1,63 @@
+cmake:
+  application:
+    configuration-dir: '/home/jsc/zephyrproject/jscApps/03_kconfig_demo'
+    source-dir: '/home/jsc/zephyrproject/jscApps/03_kconfig_demo'
+  board:
+    name: 'nucleo_h753zi'
+    path:
+     - '/home/jsc/zephyrproject/zephyr/boards/st/nucleo_h753zi'
+    qualifiers: 'stm32h753xx'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - '/home/jsc/zephyrproject/zephyr/dts/bindings'
+    files:
+     - '/home/jsc/zephyrproject/zephyr/boards/st/nucleo_h753zi/nucleo_h753zi.dts'
+    include-dirs:
+     - '/home/jsc/zephyrproject/modules/hal/ambiq/dts'
+     - '/home/jsc/zephyrproject/modules/hal/atmel/include'
+     - '/home/jsc/zephyrproject/modules/hal/bouffalolab/include'
+     - '/home/jsc/zephyrproject/modules/hal/bouffalolab/include/zephyr'
+     - '/home/jsc/zephyrproject/modules/hal/gigadevice/include'
+     - '/home/jsc/zephyrproject/modules/hal/microchip/include'
+     - '/home/jsc/zephyrproject/modules/hal/microchip/dts'
+     - '/home/jsc/zephyrproject/modules/hal/nuvoton/dts'
+     - '/home/jsc/zephyrproject/modules/hal/nxp/dts'
+     - '/home/jsc/zephyrproject/modules/hal/stm32/dts'
+     - '/home/jsc/zephyrproject/modules/hal/ti/dts'
+     - '/home/jsc/zephyrproject/zephyr/include'
+     - '/home/jsc/zephyrproject/zephyr/include/zephyr'
+     - '/home/jsc/zephyrproject/zephyr/dts/common'
+     - '/home/jsc/zephyrproject/zephyr/dts/vendor'
+     - '/home/jsc/zephyrproject/zephyr/dts/rx'
+     - '/home/jsc/zephyrproject/zephyr/dts/x86'
+     - '/home/jsc/zephyrproject/zephyr/dts/xtensa'
+     - '/home/jsc/zephyrproject/zephyr/dts/sparc'
+     - '/home/jsc/zephyrproject/zephyr/dts/riscv'
+     - '/home/jsc/zephyrproject/zephyr/dts/posix'
+     - '/home/jsc/zephyrproject/zephyr/dts/arm64'
+     - '/home/jsc/zephyrproject/zephyr/dts/arm'
+     - '/home/jsc/zephyrproject/zephyr/dts/arc'
+     - '/home/jsc/zephyrproject/zephyr/dts'
+  kconfig:
+    extra-user-files:
+     - 'boards/nucleo_h753zi.conf'
+    files:
+     - '/home/jsc/zephyrproject/zephyr/boards/st/nucleo_h753zi/nucleo_h753zi_defconfig'
+     - '/home/jsc/zephyrproject/jscApps/03_kconfig_demo/prj.conf'
+     - '/home/jsc/zephyrproject/jscApps/03_kconfig_demo/boards/nucleo_h753zi.conf'
+     - '/home/jsc/zephyrproject/jscApps/03_kconfig_demo/boards/nucleo_h753zi.conf'
+    user-files:
+     - '/home/jsc/zephyrproject/jscApps/03_kconfig_demo/prj.conf'
+     - '/home/jsc/zephyrproject/jscApps/03_kconfig_demo/boards/nucleo_h753zi.conf'
+  toolchain:
+    name: 'zephyr'
+    path: '/home/jsc/zephyr-sdk-1.0.1'
+  zephyr:
+    version: '4.4.99'
+    zephyr-base: '/home/jsc/zephyrproject/zephyr'
+version: '0.1.0'
+west:
+  command: '/home/jsc/zephyrproject/.venv/bin/west build -b nucleo_h753zi -- -DEXTRA_CONF_FILE=boards/nucleo_h753zi.conf'
+  topdir: '/home/jsc/zephyrproject'
+  version: '1.5.0'
