@@ -7,6 +7,7 @@ int main()
 {
     while (true)
     {
+        // Je dervais utiliser pinrtk, qui est minimal et threadsafe.
         printf("Hello, World: %d\n", i);
         i++;
     }

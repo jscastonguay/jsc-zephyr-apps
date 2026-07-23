@@ -1,0 +1,5 @@
+if(CONFIG_SAY_HELLO)
+    message(STATUS "say_hello module is enabled")
+    zephyr_include_directories(.)
+    zephyr_library_sources(say_hello.c)    
+endif()

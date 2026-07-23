@@ -1,0 +1,9 @@
+# Creation d'un symbole pour menuconfig
+config SAY_HELLO
+    bool "Active say_hello module pour une sortie basique via le terminal"
+    default n
+    depends on PRINTK
+    help
+        Cette option active le module say_hello, qui fournit une fonction simple pour afficher
+        "Hello, World!" via le terminal.
+        
