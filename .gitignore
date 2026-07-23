@@ -1,16 +1,18 @@
-# editors
-.vscode
+# Editors
+.vscode/
 *.swp
 *~
 
-# python
-.venv
-
-# build
-/build*
-/twister-out*
-
+# Python
+.venv/
 __pycache__/
 
-# docs
-/doc/_build*
+# Zephyr
+build*/
+twister-out*/
+
+# Documentation
+**/_build/
+
+# Misc
+*.log
