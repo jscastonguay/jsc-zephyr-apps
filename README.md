@@ -9,7 +9,14 @@ Pour un exemple d'un projet de type workspace:
 https://github.com/zephyrproject-rtos/example-application/tree/main
 
 Pour Kconfig:
+https://interrupt.memfault.com/blog/practical_zephyr_kconfig
+
+Pour zephyr en général (et autres porribilités):
 https://interrupt.memfault.com/blog/practical_zephyr_basics
+https://interrupt.memfault.com/blog/practical_zephyr_dt
+https://interrupt.memfault.com/blog/practical_zephyr_dt_semantics
+https://interrupt.memfault.com/blog/practical_zephyr_05_dt_practice
+https://interrupt.memfault.com/blog/practical_zephyr_west
 
 ## Commandes
 
@@ -44,6 +51,10 @@ Par la suite, modifier le fichier `prj.conf`.
 Si le fichier de configuration kconfig est créé à un autre endroit, par exemple `boards/nucleo_h753zi.conf`, faire le build de la façon suivante:
 ```bash
 west build -b nucleo_h753zi -- -DEXTRA_CONF_FILE=boards/nucleo_h753zi.conf
+```
+ou pour s'assurer de tout rebâtir:
+```bash
+west build -b nucleo_h753zi -p always -- -DEXTRA_CONF_FILE=boards/nucleo_h753zi.conf
 ```
 
 Pour télécharger l'application:
