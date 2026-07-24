@@ -18,6 +18,17 @@ https://interrupt.memfault.com/blog/practical_zephyr_dt_semantics
 https://interrupt.memfault.com/blog/practical_zephyr_05_dt_practice
 https://interrupt.memfault.com/blog/practical_zephyr_west
 
+Pour le devicetree:
+https://www.devicetree.org/
+https://github.com/devicetree-org/devicetree-specification/releases/tag/v0.4
+https://docs.zephyrproject.org/latest/build/dts/index.html
+Pour la syntaxe:
+- https://docs.zephyrproject.org/latest/build/dts/intro-syntax-structure.html
+- https://docs.zephyrproject.org/latest/build/dts/bindings-syntax.html#type
+Pour la convention de nommage des devicetree:
+- https://docs.kernel.org/devicetree/bindings/dts-coding-style.html
+
+
 ## Commandes
 
 Pour commencer:
@@ -60,4 +71,11 @@ west build -b nucleo_h753zi -p always -- -DEXTRA_CONF_FILE=boards/nucleo_h753zi.
 Pour télécharger l'application:
 ```bash
 west flash
+```
+
+## Devicetree
+
+Pour voir le dts résultant après compilation:
+```
+build/zephyr/zephyr.dts
 ```
