@@ -3,30 +3,33 @@
 ## Références
 
 Voir la série de tuto Zephyr de digikey:
-https://www.youtube.com/watch?v=mTJ_vKlMS_4&list=PLEBQazB0HUyTmK2zdwhaf8bLwuEaDH-52
+- https://www.youtube.com/watch?v=mTJ_vKlMS_4&list=PLEBQazB0HUyTmK2zdwhaf8bLwuEaDH-52
 
 Pour un exemple d'un projet de type workspace:
-https://github.com/zephyrproject-rtos/example-application/tree/main
+- https://github.com/zephyrproject-rtos/example-application/tree/main
 
 Pour Kconfig:
-https://interrupt.memfault.com/blog/practical_zephyr_kconfig
+- Practical Zephyr - Kconfig (Part 2): https://interrupt.memfault.com/blog/practical_zephyr_kconfig
 
 Pour zephyr en général (et autres porribilités):
-https://interrupt.memfault.com/blog/practical_zephyr_basics
-https://interrupt.memfault.com/blog/practical_zephyr_dt
-https://interrupt.memfault.com/blog/practical_zephyr_dt_semantics
-https://interrupt.memfault.com/blog/practical_zephyr_05_dt_practice
-https://interrupt.memfault.com/blog/practical_zephyr_west
+- [Practical Zephyr - Zephyr Basics (Part 1)](https://interrupt.memfault.com/blog/practical_zephyr_basics)
+- [Practical Zephyr - Kconfig (Part 2)](https://interrupt.memfault.com/blog/)
+- [practical_zephyr_kconfig
+Practical Zephyr - Devicetree basics (Part 3)](https://interrupt.memfault.com/blog/practical_zephyr_dt)
+- [Practical Zephyr - Devicetree semantics (Part 4)](https://interrupt.memfault.com/blog/practical_zephyr_dt_semantics)
+- [Practical Zephyr - Devicetree practice (Part 5)](https://interrupt.memfault.com/blog/practical_zephyr_05_dt_practice)
+- [Practical Zephyr - West workspaces (Part 6)](https://interrupt.memfault.com/blog/practical_zephyr_west)
 
 Pour le devicetree:
-https://www.devicetree.org/
+
+- https://www.devicetree.org/
 https://github.com/devicetree-org/devicetree-specification/releases/tag/v0.4
 https://docs.zephyrproject.org/latest/build/dts/index.html
-Pour la syntaxe:
-- https://docs.zephyrproject.org/latest/build/dts/intro-syntax-structure.html
-- https://docs.zephyrproject.org/latest/build/dts/bindings-syntax.html#type
-Pour la convention de nommage des devicetree:
-- https://docs.kernel.org/devicetree/bindings/dts-coding-style.html
+- Pour la syntaxe:
+    - https://docs.zephyrproject.org/latest/build/dts/intro-syntax-structure.html
+    - https://docs.zephyrproject.org/latest/build/dts/bindings-syntax.html#type
+- Pour la convention de nommage des devicetree:
+    - https://docs.kernel.org/devicetree/bindings/dts-coding-style.html
 
 
 ## Commandes
