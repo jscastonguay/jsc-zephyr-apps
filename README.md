@@ -14,8 +14,7 @@ Pour Kconfig:
 Pour zephyr en général (et autres porribilités):
 - [Practical Zephyr - Zephyr Basics (Part 1)](https://interrupt.memfault.com/blog/practical_zephyr_basics)
 - [Practical Zephyr - Kconfig (Part 2)](https://interrupt.memfault.com/blog/)
-- [practical_zephyr_kconfig
-Practical Zephyr - Devicetree basics (Part 3)](https://interrupt.memfault.com/blog/practical_zephyr_dt)
+- [practical_zephyr_kconfig Practical Zephyr - Devicetree basics (Part 3)](https://interrupt.memfault.com/blog/practical_zephyr_dt)
 - [Practical Zephyr - Devicetree semantics (Part 4)](https://interrupt.memfault.com/blog/practical_zephyr_dt_semantics)
 - [Practical Zephyr - Devicetree practice (Part 5)](https://interrupt.memfault.com/blog/practical_zephyr_05_dt_practice)
 - [Practical Zephyr - West workspaces (Part 6)](https://interrupt.memfault.com/blog/practical_zephyr_west)
@@ -23,8 +22,9 @@ Practical Zephyr - Devicetree basics (Part 3)](https://interrupt.memfault.com/bl
 Pour le devicetree:
 
 - https://www.devicetree.org/
-https://github.com/devicetree-org/devicetree-specification/releases/tag/v0.4
-https://docs.zephyrproject.org/latest/build/dts/index.html
+- https://github.com/devicetree-org/devicetree-specification/releases/tag/v0.4
+- https://docs.zephyrproject.org/latest/build/dts/index.html
+- https://www.raspberrypi.com/documentation/computers/configuration.html#device-trees-overlays-and-parameters
 - Pour la syntaxe:
     - https://docs.zephyrproject.org/latest/build/dts/intro-syntax-structure.html
     - https://docs.zephyrproject.org/latest/build/dts/bindings-syntax.html#type
@@ -74,9 +74,18 @@ west build -b nucleo_h753zi -p always -- -DEXTRA_CONF_FILE=boards/nucleo_h753zi.
 Pour télécharger l'application:
 ```bash
 west flash
+```bash
+west build -b reel_board samples/basic/blinky -- -DZEPHYR_SCA_VARIANT=dtdoctor
 ```
 
+## Autres possibilités durant la comstruction
+
+Pour utiliser le `DT doctor`, faire:
+
+
 ## Devicetree
+
+Voir le résultat de l'explication de chatgpt [ici](doc/devicetree.md).
 
 Pour voir le dts résultant après compilation:
 ```
