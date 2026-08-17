@@ -1,0 +1,4 @@
+// Rien à faire puisque déjà activé. Sinon:
+//&gpioe {
+//    status = "okay";
+//};

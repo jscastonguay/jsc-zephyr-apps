@@ -49,7 +49,7 @@ Le modèle mental que je te recommande est celui-ci :
                           ▼
                  ┌─────────────────┐
                  │ DT generated    │
-                 │ macros           │
+                 │ macros          │
                  └────────┬────────┘
                           │
                           ▼
@@ -57,7 +57,7 @@ Le modèle mental que je te recommande est celui-ci :
                  │ Driver Zephyr   │
                  │                 │
                  │ DEVICE_DT_*     │
-                 │ DT_*             │
+                 │ DT_*            │
                  └────────┬────────┘
                           │
                           ▼
