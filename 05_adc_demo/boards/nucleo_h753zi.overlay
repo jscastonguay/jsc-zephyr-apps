@@ -1,0 +1,33 @@
+/ {
+	aliases {
+		my-adc = &adc3;
+		my-adc-channel = &adc3_ch6;
+	};
+};
+
+
+// Pas nécessaire puisque déjà entrée analog par défaut.
+&pinctrl {
+	adc1_in_pb8: adc1_in_pb8 {
+		pinmux = <STM32_PINMUX('B', 8, ANALOG)>;
+	};
+};
+
+// Lentrée A5 du connecteur Arduino.
+&adc3 {
+	status = "okay";
+	#address-cells = <1>;
+	#size-cells = <0>;
+
+	// Pas nécessaire puisque déjà entrée analog par défaut.
+	pinctrl-0 = <&adc1_in_pb8>;
+	pinctrl-names = "default";
+
+	adc3_ch6: channel@6 {
+		reg = <6>;
+		zephyr,gain = "ADC_GAIN_1";
+		zephyr,reference = "ADC_REF_INTERNAL";
+		zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
+		zephyr,resolution = <16>;
+	};
+};
