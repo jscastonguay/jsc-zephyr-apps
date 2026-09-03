@@ -1,0 +1,34 @@
+/ {
+	aliases {
+		my-button-1 = &button_1;
+		my-button-2 = &button_2;
+	};
+
+	custom_buttons {
+		button_1: custom_button_1 {
+			compatible = "custom,button";
+			pin = <&d50>;
+		};
+		button_2: custom_button_2 {
+			compatible = "custom,button";
+			pin = <&d51>;
+		};
+	};
+
+	//gpio-keys {
+	gpio-keys-test {
+		compatible = "gpio-keys";
+		debounce-interval-ms = <10>;
+		polling-mode;
+
+		d50: gpio50 {
+			gpios = <&gpiog 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+		};
+
+		d51: gpio51 {
+			gpios = <&gpiog 4 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+		};
+	};
+};
+
+

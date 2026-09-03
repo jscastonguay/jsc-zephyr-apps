@@ -1,0 +1,12 @@
+description: |
+  Il s'agit d'un binding d'entrée personnalisé pour les boutons du module button. Il permet de définir un comportement personnalisé pour les entrées de bouton afin de créer des interactions et des fonctionnalités uniques dans votre application. Le binding peut être configuré pour réagir à différents événements liés aux boutons, tels que les clics, les appuis et les relâchements, offrant ainsi une manière flexible de gérer les entrées utilisateur.
+
+# Doit matcher ce qui est sous DT_DRV_COMPAT dans le fichier source du driver
+compatible: "custom,button"
+
+properties:
+  # Définir les propriétés spécifiques au binding d'entrée personnalisé pour les boutons
+  pin:
+    type: phandle
+    required: true
+    description: "Référence au GPIO utilisé pour le bouton."

@@ -1,0 +1,11 @@
+config CUSTOM_BUTTON
+    bool "Custom button driver"
+    default n        # Le désactiver par défaut
+    depends on GPIO  # Le rendre dépendant de GPIO
+    help
+      Active le driver pour les boutons personnalisés.
+
+config BUTTON_INIT_PRIORITY
+    int "Custom button initialization priority"
+    default 90
+    depends on CUSTOM_BUTTON
