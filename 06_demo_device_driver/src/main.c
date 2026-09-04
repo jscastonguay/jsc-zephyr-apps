@@ -3,7 +3,7 @@
 
 #include "button.h"
 
-static const uint32_t sleep_time_ms = 10;
+static const uint32_t sleep_time_ms = 250;
 static const struct device *btn_1 = DEVICE_DT_GET(DT_ALIAS(my_button_1));
 static const struct device *btn_2 = DEVICE_DT_GET(DT_ALIAS(my_button_2));
 

@@ -31,6 +31,9 @@ Pour le devicetree:
 - Pour la convention de nommage des devicetree:
     - https://docs.kernel.org/devicetree/bindings/dts-coding-style.html
 
+Pour les device drivers:
+
+- https://github.com/ShawnHymel/workshop-zephyr-device-driver
 
 ## Commandes
 
