@@ -1,0 +1,123 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug 03_kconfig_demo",
+            "cwd": "${workspaceFolder}/03_kconfig_demo",
+            "executable": "${workspaceFolder}/03_kconfig_demo/build/zephyr/zephyr.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "runToEntryPoint": "main",
+            "device": "STM32H753ZI",
+            "configFiles": [
+                "/home/jsc/zephyrproject/zephyr/boards/st/nucleo_h753zi/support/openocd.cfg"
+            ],
+            "gdbPath": "/home/jsc/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gdb",
+            "armToolchainPath": "/home/jsc/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin",
+            "toolchainPrefix": "arm-zephyr-eabi"
+        },
+
+        {
+            "name": "Debug 04_button_demo",
+            "cwd": "${workspaceFolder}/04_button_demo",
+            "executable": "${workspaceFolder}/04_button_demo/build/zephyr/zephyr.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "runToEntryPoint": "main",
+            "device": "STM32H753ZI",
+            "configFiles": [
+                "/home/jsc/zephyrproject/zephyr/boards/st/nucleo_h753zi/support/openocd.cfg"
+            ],
+            "gdbPath": "/home/jsc/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gdb",
+            "armToolchainPath": "/home/jsc/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin",
+            "toolchainPrefix": "arm-zephyr-eabi"
+        },
+
+        {
+            "name": "Debug 04_button_demo_avec_led",
+            "cwd": "${workspaceFolder}/04_button_demo_avec_led",
+            "executable": "${workspaceFolder}/04_button_demo_avec_led/build/zephyr/zephyr.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "runToEntryPoint": "main",
+            "device": "STM32H753ZI",
+            "configFiles": [
+                "/home/jsc/zephyrproject/zephyr/boards/st/nucleo_h753zi/support/openocd.cfg"
+            ],
+            "gdbPath": "/home/jsc/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gdb",
+            "armToolchainPath": "/home/jsc/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin",
+            "toolchainPrefix": "arm-zephyr-eabi"
+        },
+
+        {
+            "name": "Debug 04_button_demo_led_from_scratch",
+            "cwd": "${workspaceFolder}/04_button_demo_led_from_scratch",
+            "executable": "${workspaceFolder}/04_button_demo_led_from_scratch/build/zephyr/zephyr.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "runToEntryPoint": "main",
+            "device": "STM32H753ZI",
+            "configFiles": [
+                "/home/jsc/zephyrproject/zephyr/boards/st/nucleo_h753zi/support/openocd.cfg"
+            ],
+            "gdbPath": "/home/jsc/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gdb",
+            "armToolchainPath": "/home/jsc/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin",
+            "toolchainPrefix": "arm-zephyr-eabi"
+        },
+
+        {
+            "name": "Debug 05_adc_demo",
+            "cwd": "${workspaceFolder}/05_adc_demo",
+            "executable": "${workspaceFolder}/05_adc_demo/build/zephyr/zephyr.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "runToEntryPoint": "main",
+            "device": "STM32H753ZI",
+            "configFiles": [
+                "/home/jsc/zephyrproject/zephyr/boards/st/nucleo_h753zi/support/openocd.cfg"
+            ],
+            "gdbPath": "/home/jsc/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gdb",
+            "armToolchainPath": "/home/jsc/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin",
+            "toolchainPrefix": "arm-zephyr-eabi"
+        },
+
+        {
+            "name": "Debug 06_demo_device_driver",
+            "cwd": "${workspaceFolder}/06_demo_device_driver",
+            "executable": "${workspaceFolder}/06_demo_device_driver/build/zephyr/zephyr.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "runToEntryPoint": "main",
+            "device": "STM32H753ZI",
+            "configFiles": [
+                "/home/jsc/zephyrproject/zephyr/boards/st/nucleo_h753zi/support/openocd.cfg"
+            ],
+            "gdbPath": "/home/jsc/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gdb",
+            "armToolchainPath": "/home/jsc/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin",
+            "toolchainPrefix": "arm-zephyr-eabi"
+        },
+
+        {
+            "name": "Debug test01",
+            "cwd": "${workspaceFolder}/test01",
+            "executable": "${workspaceFolder}/test01/build/zephyr/zephyr.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "runToEntryPoint": "main",
+            "device": "STM32H753ZI",
+            "configFiles": [
+                "/home/jsc/zephyrproject/zephyr/boards/st/nucleo_h753zi/support/openocd.cfg"
+            ],
+            "gdbPath": "/home/jsc/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gdb",
+            "armToolchainPath": "/home/jsc/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin",
+            "toolchainPrefix": "arm-zephyr-eabi"
+        }
+    ]
+}
