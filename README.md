@@ -41,6 +41,8 @@ Pour le débug:
 - Discussion chatgpt: https://chatgpt.com/share/6aa1fe85-e7e0-83ea-a0e0-5f2ac4db5821
 - Pour débugger avec le débugger, le fichier `.vscoce/launch.json` doit être créé. Ce fichier n'est pas sous git. Pour un exemple, voir [doc/launch.json](doc/launch.json).
 
+TODO: Problème lorsque je débug: ça semble planter à k_msleep 
+
 ## Commandes
 
 Pour commencer:
