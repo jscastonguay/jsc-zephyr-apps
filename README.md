@@ -42,7 +42,7 @@ Pour le débug:
 - Pour débugger avec le débugger, le fichier `.vscoce/launch.json` doit être créé. Ce fichier n'est pas sous git. Pour un exemple, voir [doc/launch.json](doc/launch.json).
 
 
-Rendu à 17 min du digikey no.8 thread
+Rendu à no.8 interrupts
 
 ## Commandes
 
